@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var listaEst = [];
+    var loop = true;
+
+    while (loop) {
+        var studentName = prompt("Digite o nome do estudante: ");
+
+      if (studentName === "STOP") {
+        loop = false;
+        console.log(listaEst);
+        alert(listaEst + ", Numero de Estudantes: " + listaEst.length);
+      } else {
+        listaEst.push(studentName);
+      }
+    }
+  </script>
+</body>
+</html>
